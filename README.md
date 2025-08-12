@@ -3,6 +3,11 @@ This project analyzes customer churn patterns using the Telco Customer Churn dat
 The goal is to clean the data, generate Key Performance Indicators (KPIs), and perform Exploratory Data Analysis (EDA) to uncover insights about customer behavior and churn rates.
 
 
+<p align="center">
+  <img src="figures/payment_method_churn_yes.png" width="820">
+</p>
+
+
 DATASET -
 Source: Kaggle - Telco Customer Churn
 Rows: ~7,000 customers
@@ -32,10 +37,16 @@ Key Insights -
 4. Shorter tenure is strongly associated with churn.
 5. Fiber optic internet customers show higher churn rates compared to DSL customers.
 
+
+Visuals
+![Churn Distribution](figures/churn_distribution.png)
+![Contract vs Churn](figures/contract_vs_churn.png)
+![Internet Service vs Churn](figures/internet_service_vs_churn.png)
+![Monthly Charges vs Churn](figures/monthly_charges_vs_churn.png)
+![Correlation Heatmap](figures/correlation_heatmap.png)
+
 Tech Stack
 	•	Python (Pandas, NumPy, Matplotlib, Seaborn)
 	•	Data Cleaning & Processing
 	•	Exploratory Data Analysis (EDA)
 	•	KPI Reporting
-
-![Churn Distribution](figures/churn%20distribution.png)
