@@ -24,6 +24,7 @@ Avg MonthlyCharges (Churn=No),61.27
 Avg Tenure (Churn=Yes),17.98
 Avg Tenure (Churn=No),37.57
 
+
 Key Insights - 
 1. Customers with month-to-month contracts have the highest churn rate.
 2. Customers who pay by Electronic Check are more likely to churn than those paying via credit card or bank transfer.
@@ -31,6 +32,13 @@ Key Insights -
 4. Shorter tenure is strongly associated with churn.
 5. Fiber optic internet customers show higher churn rates compared to DSL customers.
 
+
+Visuals -
+![Churn Distribution](telco_churn_analysis/figures/churn_distribution.png)
+![Contract vs Churn](telco_churn_analysis/figures/contract_vs_churn.png)
+![Internet Service vs Churn](telco_churn_analysis/figures/internet_service_vs_churn.png)
+![Monthly Charges vs Churn](telco_churn_analysis/figures/monthly_charges_vs_churn.png)
+![Correlation Heatmap](telco_churn_analysis/figures/correlation_heatmap.png)
 
 Tech Stack
 	•	Python (Pandas, NumPy, Matplotlib, Seaborn)
