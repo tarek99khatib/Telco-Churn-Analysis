@@ -38,7 +38,4 @@ Tech Stack
 	•	Exploratory Data Analysis (EDA)
 	•	KPI Reporting
 
-
-<p align="center">
-  <img src="telco_churn_analysis/figures/churn_distribution.png" width="800">
-</p>
+![Churn Distribution](figures/churn%20distribution.png)
