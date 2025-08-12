@@ -37,3 +37,8 @@ Tech Stack
 	•	Data Cleaning & Processing
 	•	Exploratory Data Analysis (EDA)
 	•	KPI Reporting
+
+
+<p align="center">
+  <img src="telco_churn_analysis/figures/churn_distribution.png" width="800">
+</p>
