@@ -1,0 +1,8 @@
+Metric,Value
+Total Customers,7043.0
+Churned Customers,1869.0
+Churn Rate (%),26.54
+Avg MonthlyCharges (Churn=Yes),74.44
+Avg MonthlyCharges (Churn=No),61.27
+Avg Tenure (Churn=Yes),17.98
+Avg Tenure (Churn=No),37.57
