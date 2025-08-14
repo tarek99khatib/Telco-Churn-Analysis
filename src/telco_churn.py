@@ -68,8 +68,10 @@ kpis = pd.DataFrame({
               round(avg_monthly_yes, 2), round(avg_monthly_no, 2),
               round(avg_tenure_yes, 2), round(avg_tenure_no, 2)]
 })
-
 kpis.to_csv("telco_churn_analysis/data/processed/kpis.csv", index=False)
+
+
+# ------ Pivot Tables for Analysis ------ #
 
 # Pivot table to analyze contract type and churn.
 pivot_contract = pd.crosstab(df['Contract'], df['Churn'], normalize='index')*100
@@ -96,6 +98,8 @@ pivot_payment_method = pd.crosstab(df['PaymentMethod'], df['Churn'], normalize='
 pivot_payment_method=pivot_payment_method.round(2)  # rounding to 2 decimal places
 pivot_payment_method.to_csv("telco_churn_analysis/data/processed/pivot_payment_method_churn.csv") # we can see that customers who pay by electronic check have a higher churn rate.
 
+
+# ------ Exploratory Data Analysis (EDA) ------ #
 
 # now, EDA can be performed on the cleaned data.
 summary = df.describe() # descriptive statistics of the dataset.
@@ -187,7 +191,7 @@ plt.savefig("telco_churn_analysis/figures/total_charges_distribution.png")
 plt.close() # we can see that the distribution is right-skewed, indicating that most customers have lower total charges.
 
 
-####### Correlation Analysis ########
+# ------ Correlation Analysis ------ #
 df['Churn_numeric'] = df['Churn'].apply(lambda x: 1 if x.strip().lower() == 'yes' else 0)
 numeric_cols = df.select_dtypes(include=['int64', 'float64']).columns
 corr = df[numeric_cols].corr()
